@@ -21,5 +21,10 @@ matchStar (c,r:regex,t:t1:test) | c == t1 || c == '.' = matchStar(c,regex,t1:tes
 
 main :: IO ()
 main = do
-  [regex,test] <- getArgs
+  contents <- getContents
+  args <- getArgs
+  let regex = args !! 0
+  let test = case args !! 1 of
+               [] -> contents
+               _  -> args !! 1
   print $ match(regex,test)
