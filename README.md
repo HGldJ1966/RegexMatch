@@ -1,4 +1,4 @@
-#RegexMatch.hs
+# RegexMatch.hs
 
 A Haskell port of Rob Pike's ~30 line recursive regular expression parser from [*The Practice of Programming*](https://www.amazon.com/Practice-Programming-Addison-Wesley-Professional-Computing/dp/020161586X), described in detail in Brian Kernighan's contribution to the anthology [*Beautiful Code*](http://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html).
 
